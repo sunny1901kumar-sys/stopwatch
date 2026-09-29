@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e1e2f;
+}
+.stopwatch-container{
+    background-color: #2b2b3d;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+
+}
+h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+#stopwatchDisplay{
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#lapList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    max-height: 150px;
+    overflow-y: auto;
+    color: white;
+    font-size: 16px;
+}
+
+#lapList li {
+    padding: 5px;
+    border-bottom: 1px solid #444;
+}
+#startbtn,#pausebtn,#resetbtn,#lapbtn{
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    /* background-color: #f0f0f0; */
+    transition: (0.2);
+} 
+#startbtn{ background-color: #4caf50; }  
+#pausebtn{ background-color: #ff9800; }  
+#resetbtn{ background-color: #f44336; }  
+#lapbtn{ background-color: #2196f3; }  
+
+#startbtn:hover, #pausebtn:hover, #resetbtn:hover,#lapbtn:hover{
+    background-color: #d4d4d4;
+    transform: scale(1.05);
+}
